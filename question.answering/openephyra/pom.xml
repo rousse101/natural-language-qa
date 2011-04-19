@@ -1,0 +1,175 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <parent>
+	<groupId>question.answering</groupId>
+	<artifactId>question.answering</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+  </parent>
+
+  <groupId>openephyra</groupId>
+  <artifactId>openephyra</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>openephyra</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+	<dependency>
+		<groupId>minorthird</groupId>
+		<artifactId>minorthird</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/ml/minorthird.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>maxent</groupId>
+		<artifactId>maxent</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/ml/maxent.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>jwnl</groupId>
+		<artifactId>jwnl</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/nlp/jwnl.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>lingpipe</groupId>
+		<artifactId>lingpipe</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/nlp/lingpipe.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>opennlp-tools</groupId>
+		<artifactId>opennlp-tools</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/nlp/opennlp-tools.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>plingstemmer</groupId>
+		<artifactId>plingstemmer</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/nlp/plingstemmer.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>snowball</groupId>
+		<artifactId>snowball</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/nlp/snowball.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>stanford-ner</groupId>
+		<artifactId>stanford-ner</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/nlp/stanford-ner.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>stanford-parser</groupId>
+		<artifactId>stanford-parser</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/nlp/stanford-parser.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>stanford-postagger</groupId>
+		<artifactId>stanford-postagger</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/nlp/stanford-postagger.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>javelin</groupId>
+		<artifactId>javelin</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/qa/javelin.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>googleapi</groupId>
+		<artifactId>googleapi</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/search/googleapi.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>indri</groupId>
+		<artifactId>indri</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/search/indri.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>yahoosearch</groupId>
+		<artifactId>yahoosearch</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/search/yahoosearch.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>trove</groupId>
+		<artifactId>trove</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/util/trove.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>htmlparser</groupId>
+		<artifactId>htmlparser</artifactId>
+		<version>0.9.2</version>
+		<scope>system</scope>
+		<systemPath>${project.basedir}/lib/util/htmlparser.jar</systemPath>
+	</dependency>
+	<dependency>
+		<groupId>commons-logging</groupId>
+		<artifactId>commons-logging</artifactId>
+		<version>1.1</version>
+	</dependency>
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.16</version>
+	</dependency>
+  </dependencies>
+</project>
+
+
+<!--
+<pathelement location="lib/ml/maxent.jar"/>
+        -<pathelement location="lib/ml/minorthird.jar"/>
+        -<pathelement location="lib/nlp/jwnl.jar"/>
+        -<pathelement location="lib/nlp/lingpipe.jar"/>
+        -<pathelement location="lib/nlp/opennlp-tools.jar"/>
+        -<pathelement location="lib/nlp/plingstemmer.jar"/>
+        -<pathelement location="lib/nlp/snowball.jar"/>
+        -<pathelement location="lib/nlp/stanford-ner.jar"/>
+        -<pathelement location="lib/nlp/stanford-parser.jar"/>
+        -<pathelement location="lib/nlp/stanford-postagger.jar"/>
+        -<pathelement location="lib/qa/javelin.jar"/>
+        -<pathelement location="lib/search/googleapi.jar"/>
+        -<pathelement location="lib/search/indri.jar"/>
+        -<pathelement location="lib/search/yahoosearch.jar"/>
+        *<pathelement location="lib/util/commons-logging.jar"/>
+        -<pathelement location="lib/util/htmlparser.jar"/>
+        *<pathelement location="lib/util/log4j.jar"/>
+        -<pathelement location="lib/util/trove.jar"/>
+-->
