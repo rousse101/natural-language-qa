@@ -27,7 +27,6 @@ import java.util.Date;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
-import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.queryParser.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
@@ -50,7 +49,7 @@ public class SearchFiles {
       System.exit(0);
     }
 
-    String index = "index";
+    String index = "D:/dev/InformationRetrieval/wikiindex";
     String field = "contents";
     String queries = null;
     int repeat = 0;
