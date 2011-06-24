@@ -1,0 +1,1 @@
+bzip2 -dc enwiki-20110526-pages-articles11.xml.bz2 | WikiExtractor.py -b 250K -o extracted4
