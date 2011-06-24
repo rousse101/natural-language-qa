@@ -53,7 +53,7 @@ import java.util.ArrayList;
  */
 public class OpenEphyra {
 	/** Maximum number of factoid answers. */
-	protected static final int FACTOID_MAX_ANSWERS = 1;
+	protected static final int FACTOID_MAX_ANSWERS = 5;
 	/** Absolute threshold for factoid question scores. */
 	protected static final float FACTOID_ABS_THRESH = 0;
 	/** Relative threshold for list question scores (fraction of top score). */
