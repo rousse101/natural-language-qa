@@ -1,0 +1,1 @@
+The project integrates **OpenEphyra** and **Lucene** to implement question answering system in real time using a local corpus of documents.
